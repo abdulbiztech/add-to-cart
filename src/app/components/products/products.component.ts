@@ -13,7 +13,7 @@ public filterCategory:any;
 searchKey:string=''
 constructor(private api:ApiService,private cartApi:CartService){}
 ngOnInit():void{
-  this.api.getProduct().subscribe(res=>{
+  this.api.getProduct().subscribe((res:any)=>{
     this.productList = res
     this.filterCategory = res
     this.productList.forEach((a:any) => {

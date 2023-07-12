@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit{
   public searchTerm:string='';
   constructor(private CartService:CartService){}
   ngOnInit(): void {
-      this.CartService.getProduct().subscribe(res=>{
+      this.CartService.getProduct().subscribe((res:any)=>{
         this.totalItem = res.length;
       })
   }

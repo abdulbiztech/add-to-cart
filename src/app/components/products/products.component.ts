@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/services/api.service';
-import { CartService } from 'src/app/services/services/cart.service';
+import { ApiService } from 'src/app/service/api.service';
+import { CartService } from 'src/app/service/cart.service';
+
 
 
 @Component({
